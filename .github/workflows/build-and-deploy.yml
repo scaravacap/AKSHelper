@@ -13,8 +13,8 @@ jobs:
     with:
       templateVersion: 0.10.1
       rg: rg-aks-wus
-      resourceName: aks-Non_OS-wus
-      templateParams: resourceName=aks-Non_OS-wus upgradeChannel=stable AksPaidSkuForSLA=true SystemPoolType=Standard agentCountMax=20 custom_vnet=true enable_aad=true AksDisableLocalAccounts=true enableAzureRBAC=true adminPrincipalId=_USER_OBJECT_ID_ registries_sku=Premium acrPushRolePrincipalId=_USER_OBJECT_ID_ omsagent=true retentionInDays=30 networkPolicy=azure azurepolicy=audit availabilityZones=["1","2","3"] authorizedIPRanges=["167.220.24.171/32"] ingressApplicationGateway=true appGWcount=0 appGWsku=WAF_v2 appGWmaxCount=10 appgwKVIntegration=true aksOutboundTrafficType=natGateway createNatGateway=true keyVaultAksCSI=true keyVaultCreate=true keyVaultOfficerRolePrincipalId=_USER_OBJECT_ID_
+      resourceName: aks-NoOS-wus
+      templateParams: resourceName=aks-NoOS-wus upgradeChannel=stable AksPaidSkuForSLA=true SystemPoolType=Standard agentCountMax=20 custom_vnet=true enable_aad=true AksDisableLocalAccounts=true enableAzureRBAC=true adminPrincipalId=_USER_OBJECT_ID_ registries_sku=Premium acrPushRolePrincipalId=_USER_OBJECT_ID_ omsagent=true retentionInDays=30 networkPolicy=azure azurepolicy=audit availabilityZones=["1","2","3"] authorizedIPRanges=["167.220.24.171/32"] ingressApplicationGateway=true appGWcount=0 appGWsku=WAF_v2 appGWmaxCount=10 appgwKVIntegration=true aksOutboundTrafficType=natGateway createNatGateway=true keyVaultAksCSI=true keyVaultCreate=true keyVaultOfficerRolePrincipalId=_USER_OBJECT_ID_
     secrets:
       AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
       AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
